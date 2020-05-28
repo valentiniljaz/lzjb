@@ -8,6 +8,10 @@ based on the OpenSolaris C implementations.
 C. Scott Ananian cleaned up the source code and packaged it for `node`
 and `volo`.
 
+## Why fork?
+
+In order to use the library with Webpack it was required to remove "var" when defining "define", as described her: https://github.com/webpack/webpack/issues/5316#issuecomment-395778081
+
 ## How to install
 
 ```
