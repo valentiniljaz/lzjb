@@ -1,10 +1,8 @@
-if (typeof define !== 'function') { define = require('amdefine')(module); }
-define(['./lib/freeze', './lib/Iuppiter'], function(freeze, Iuppiter) {
-  'use strict';
+const freeze = require('./lib/freeze.js')();
+const Iuppiter = require('./lib/Iuppiter.js');
 
-  return freeze({
-        version: "0.0.1",
-        compressFile: Iuppiter.compressFile,
-        decompressFile: Iuppiter.decompressFile
-  });
+module.exports =  freeze({
+    version: "0.0.1",
+    compressFile: Iuppiter.compressFile,
+    decompressFile: Iuppiter.decompressFile
 });
